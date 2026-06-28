@@ -1,7 +1,7 @@
 # PROMPT PREDIKSI PERTANDINGAN PIALA DUNIA 2026
 
 README singkat ini menjelaskan cara menggunakan **Master Prompt Prediksi Pertandingan Piala Dunia** untuk menganalisis pertandingan secara objektif, berbasis data valid, dan tidak mengarang statistik.
-
+Prompt ini dibuat untuk hiburan semata, bukan prediksi valid untuk menentukan pemenang sebuah pertandingan.
 ---
 
 ## Tujuan
