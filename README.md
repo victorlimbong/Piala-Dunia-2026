@@ -1,8 +1,13 @@
-# Master Prompt Prediksi Pertandingan Piala Dunia 2026 v2.0
+# README — Master Prompt Prediksi Pertandingan Piala Dunia 2026 v2.1
 
 ## Ringkasan
 
-Repository / dokumen ini berisi **Master Prompt Prediksi Pertandingan Piala Dunia 2026 v2.0** untuk membantu menganalisis dan memprediksi pertandingan sepakbola secara lebih objektif, berbasis data, dan terstruktur.
+Repository ini berisi **Master Prompt Prediksi Pertandingan Piala Dunia 2026 v2.1** untuk membantu menganalisis dan memprediksi pertandingan sepakbola secara lebih objektif, berbasis data, dan terstruktur.
+
+Versi v2.1 menambahkan:
+
+> **Repository / File Generation Mode**  
+> Mode khusus untuk membuat README, master prompt, examples, templates, dan paket ZIP siap pakai.
 
 Prompt ini dirancang untuk digunakan di:
 
@@ -12,11 +17,6 @@ Prompt ini dirancang untuk digunakan di:
 - DeepSeek
 - Perplexity
 - AI chatbot lain yang mendukung analisis berbasis prompt panjang
-
-Versi v2.0 menambahkan modul penting:
-
-> **Post-Match Learning**  
-> Modul evaluasi setelah pertandingan selesai untuk membandingkan prediksi dengan hasil aktual, menghitung akurasi, menganalisis error, dan memperbaiki parameter prediksi berikutnya.
 
 ---
 
@@ -38,6 +38,7 @@ Prompt ini dibuat agar prediksi pertandingan tidak hanya berdasarkan opini, fana
 12. Probabilitas hasil
 13. Risiko prediksi
 14. Evaluasi pasca-pertandingan
+15. Dokumentasi repository
 
 ---
 
@@ -100,12 +101,27 @@ Fungsi:
 
 ---
 
-## Struktur File yang Disarankan
+### 5. Repository / File Generation Mode
+
+Digunakan jika ingin membuat paket dokumentasi siap pakai.
+
+Fungsi:
+
+- Membuat README
+- Membuat master prompt
+- Membuat contoh penggunaan
+- Membuat template input
+- Membuat struktur folder
+- Membuat ZIP repository jika tool mendukung
+
+---
+
+## Struktur Folder
 
 ```text
 world-cup-prediction-prompt/
 ├── README.md
-├── master-prompt-prediksi-piala-dunia-2026-v2.md
+├── master-prompt-prediksi-piala-dunia-2026-v2.1.md
 ├── examples/
 │   ├── pre-match-brasil-vs-jepang.md
 │   ├── line-up-update-brasil-vs-jepang.md
@@ -117,6 +133,20 @@ world-cup-prediction-prompt/
 
 ---
 
+## Penjelasan Isi File
+
+| File | Fungsi |
+|---|---|
+| `README.md` | Panduan penggunaan repository |
+| `master-prompt-prediksi-piala-dunia-2026-v2.1.md` | Master prompt utama versi 2.1 |
+| `examples/pre-match-brasil-vs-jepang.md` | Contoh prediksi sebelum pertandingan |
+| `examples/line-up-update-brasil-vs-jepang.md` | Contoh update setelah line-up resmi |
+| `examples/post-match-learning-brasil-vs-jepang.md` | Contoh evaluasi setelah pertandingan |
+| `templates/input-prediksi.md` | Template kosong untuk prediksi baru |
+| `templates/input-post-match-learning.md` | Template kosong untuk evaluasi post-match |
+
+---
+
 ## Cara Penggunaan Cepat
 
 ### Langkah 1 — Copy Master Prompt
@@ -124,7 +154,7 @@ world-cup-prediction-prompt/
 Buka file:
 
 ```text
-master-prompt-prediksi-piala-dunia-2026-v2.md
+master-prompt-prediksi-piala-dunia-2026-v2.1.md
 ```
 
 Copy seluruh isi prompt.
@@ -133,7 +163,7 @@ Copy seluruh isi prompt.
 
 ### Langkah 2 — Paste ke AI Chatbot
 
-Paste prompt ke ChatGPT, Gemini, Claude, DeepSeek, atau AI lain.
+Paste prompt ke ChatGPT, Gemini, Claude, DeepSeek, Perplexity, atau AI lain.
 
 Agar hasil lebih baik, gunakan model yang mendukung:
 
@@ -159,6 +189,7 @@ Prediksi pertandingan:
 - Tim B: Jepang
 - Tanggal: 30 Juni 2026
 - Lokasi: Houston Stadium, Houston, USA
+- Zona waktu analisis: Asia/Jakarta
 - Mode analisis: Pre-Match
 - Catatan tambahan: prioritaskan data pertandingan terakhir, ranking, Elo, cedera, line-up, dan analisis taktis
 ```
@@ -166,8 +197,6 @@ Prediksi pertandingan:
 ---
 
 ## Template Input Pre-Match
-
-Gunakan template ini sebelum pertandingan dimulai:
 
 ```markdown
 Prediksi pertandingan:
@@ -179,6 +208,7 @@ Prediksi pertandingan:
 - Tim B:
 - Tanggal:
 - Lokasi:
+- Zona waktu analisis:
 - Mode analisis: Pre-Match
 - Catatan tambahan:
 ```
@@ -186,8 +216,6 @@ Prediksi pertandingan:
 ---
 
 ## Template Input Line-Up Update
-
-Gunakan setelah starting XI resmi tersedia:
 
 ```markdown
 Update prediksi berdasarkan line-up resmi:
@@ -207,8 +235,6 @@ Update prediksi berdasarkan line-up resmi:
 ---
 
 ## Template Input Live Adjustment
-
-Gunakan saat pertandingan sedang berjalan:
 
 ```markdown
 Update prediksi live:
@@ -231,8 +257,6 @@ Update prediksi live:
 
 ## Template Input Post-Match Learning
 
-Gunakan setelah pertandingan selesai:
-
 ```markdown
 Evaluasi post-match:
 
@@ -250,29 +274,32 @@ Evaluasi post-match:
 - Gol:
 - Kartu merah:
 - Momen penentu:
+- Statistik utama:
 - Catatan tambahan:
 ```
 
-Contoh:
+---
+
+## Template Input Repository / File Generation
 
 ```markdown
-Evaluasi post-match:
+Buatkan paket repository Master Prompt Prediksi Piala Dunia 2026.
 
-- Kompetisi: Piala Dunia
-- Tahun: 2026
-- Fase: Round of 32
-- Tim A: Brasil
-- Tim B: Jepang
-- Prediksi awal: Brasil menang 2-1
-- Prediksi alternatif: Brasil 2-0, Brasil 1-0, 1-1 extra time
-- Probabilitas awal: Brasil 60%, Seri 22%, Jepang 18%
-- Hasil aktual: Brasil menang
-- Skor akhir: Brasil 2-1 Jepang
-- Pemenang: Brasil
-- Gol: data tidak tersedia / belum diisi
-- Kartu merah: tidak diketahui / belum diisi
-- Momen penentu: data tidak tersedia / belum diisi
-- Catatan tambahan: evaluasi akurasi dan berikan learning note
+- Versi: 2.1
+- Nama folder: world-cup-prediction-prompt
+- Format file: Markdown
+- File yang harus dibuat:
+  - README.md
+  - master-prompt-prediksi-piala-dunia-2026-v2.1.md
+  - examples/pre-match-brasil-vs-jepang.md
+  - examples/line-up-update-brasil-vs-jepang.md
+  - examples/post-match-learning-brasil-vs-jepang.md
+  - templates/input-prediksi.md
+  - templates/input-post-match-learning.md
+- Output:
+  - Tampilkan struktur folder
+  - Buatkan file
+  - Jika memungkinkan, buat ZIP
 ```
 
 ---
@@ -280,7 +307,7 @@ Evaluasi post-match:
 ## Rekomendasi Penggunaan di ChatGPT
 
 1. Aktifkan web search jika tersedia.
-2. Paste Master Prompt v2.0.
+2. Paste Master Prompt v2.1.
 3. Masukkan data pertandingan.
 4. Minta AI menampilkan:
    - Data faktual
@@ -289,20 +316,13 @@ Evaluasi post-match:
    - Risiko
    - Confidence level
 5. Setelah pertandingan selesai, gunakan mode Post-Match Learning.
-
-Contoh perintah:
-
-```markdown
-Gunakan Master Prompt Prediksi Piala Dunia 2026 v2.0.
-Lakukan Pre-Match Prediction untuk pertandingan berikut:
-[isi data pertandingan]
-```
+6. Jika ingin membuat paket file, gunakan Repository / File Generation Mode.
 
 ---
 
 ## Rekomendasi Penggunaan di Gemini
 
-1. Paste Master Prompt v2.0.
+1. Paste Master Prompt v2.1.
 2. Minta Gemini melakukan validasi data terbaru.
 3. Jika Gemini memberikan data tanpa sumber, minta ulang dengan format:
 
@@ -381,8 +401,6 @@ Untuk Post-Match Learning:
 
 ## Prinsip Anti-Halusinasi
 
-Prompt ini wajib mengikuti aturan berikut:
-
 1. Jangan mengarang statistik.
 2. Jangan menyebut data tanpa sumber.
 3. Jika data cedera belum pasti, tulis "belum terkonfirmasi".
@@ -393,31 +411,49 @@ Prompt ini wajib mengikuti aturan berikut:
 8. Pisahkan data faktual dan interpretasi.
 9. Jika sumber berbeda, jelaskan sumber mana yang lebih dipercaya.
 10. Jangan menyesuaikan prediksi setelah hasil diketahui tanpa menandainya sebagai Post-Match Learning.
+11. Jika hanya memberi struktur folder, jangan mengklaim file sudah dibuat.
+12. Jika membuat examples/templates, isi file harus konsisten dengan master prompt.
 
 ---
 
-## Catatan Penting
+## Contoh Workflow Lengkap
 
-Prompt ini tidak menjamin hasil pertandingan benar 100%.
+```text
+1. Sebelum pertandingan
+   Gunakan Pre-Match Prediction.
 
-Sepakbola tetap memiliki unsur ketidakpastian seperti:
+2. Setelah line-up keluar
+   Gunakan Line-Up Update Prediction.
 
-- Kartu merah
-- Penalti
-- VAR
-- Cedera mendadak
-- Kesalahan kiper
-- Gol cepat
-- Cuaca
-- Tekanan mental
-- Keputusan pelatih
-- Finishing di luar ekspektasi
+3. Jika pertandingan berjalan
+   Gunakan Live Context Adjustment.
 
-Gunakan prompt ini sebagai alat analisis, bukan sebagai kepastian hasil.
+4. Setelah pertandingan selesai
+   Gunakan Post-Match Learning.
+
+5. Simpan learning note
+   Gunakan untuk memperbaiki prediksi pertandingan berikutnya.
+
+6. Jika ingin paket dokumentasi
+   Gunakan Repository / File Generation Mode.
+```
 
 ---
 
 ## Changelog
+
+### v2.1
+
+Penambahan:
+
+- Repository / File Generation Mode
+- Instruksi eksplisit membuat README
+- Instruksi eksplisit membuat folder `examples/`
+- Instruksi eksplisit membuat folder `templates/`
+- Instruksi eksplisit membuat 5 file pendukung
+- Template input untuk pembuatan repository
+- Aturan anti-halusinasi khusus file generation
+- Penjelasan bahwa struktur folder rekomendasi belum berarti file sudah dibuat
 
 ### v2.0
 
@@ -449,27 +485,6 @@ Fitur awal:
 
 ---
 
-## Contoh Workflow Lengkap
-
-```text
-1. Sebelum pertandingan
-   Gunakan Pre-Match Prediction.
-
-2. Setelah line-up keluar
-   Gunakan Line-Up Update Prediction.
-
-3. Jika pertandingan berjalan
-   Gunakan Live Context Adjustment.
-
-4. Setelah pertandingan selesai
-   Gunakan Post-Match Learning.
-
-5. Simpan learning note
-   Gunakan untuk memperbaiki prediksi pertandingan berikutnya.
-```
-
----
-
 ## Lisensi Penggunaan
 
 Dokumen ini dapat digunakan, dimodifikasi, dan dikembangkan untuk kebutuhan edukasi, analisis sepakbola, riset pribadi, atau pengembangan sistem prediksi internal.
@@ -480,10 +495,10 @@ Tidak disarankan digunakan sebagai satu-satunya dasar untuk keputusan finansial,
 
 ## Penutup
 
-Master Prompt Prediksi Pertandingan Piala Dunia 2026 v2.0 dirancang sebagai sistem analisis berulang:
+Master Prompt Prediksi Pertandingan Piala Dunia 2026 v2.1 dirancang sebagai sistem analisis berulang:
 
 ```text
-Data → Prediksi → Hasil Aktual → Evaluasi → Learning → Prediksi Lebih Baik
+Data → Prediksi → Hasil Aktual → Evaluasi → Learning → Dokumentasi → Prediksi Lebih Baik
 ```
 
 Dengan pendekatan ini, setiap pertandingan menjadi bahan pembelajaran untuk meningkatkan kualitas analisis berikutnya.
