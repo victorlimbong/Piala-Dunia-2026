@@ -1,4 +1,4 @@
-# README — Master Prompt Prediksi Pertandingan Piala Dunia 2026 v2.1
+# Master Prompt Prediksi Pertandingan Piala Dunia 2026 v2.1
 
 ## Ringkasan
 
